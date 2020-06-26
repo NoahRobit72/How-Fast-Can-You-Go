@@ -9,7 +9,7 @@ namespace HowFastCanYouGo
     // **************************************************
     //
     // Title: "How Fast Can You Go Quiz"
-    // Description: Timed quiz with data anayalsis 
+    // Description: Timed quiz with data analysis
     // Application Type: Console
     // Author: Robitshek, Noah
     // Dated Created: 6/22/2020
@@ -24,10 +24,10 @@ namespace HowFastCanYouGo
             string username;
             bool keepGoing;
 
-            List<int> colorTimes = new List<int>();
-            List<int> riddleTimes = new List<int>();
-            List<int> mathTimes = new List<int>();
-            List<int> alphabetTimes = new List<int>();
+            List<int> colorData = new List<int>();
+            List<int> riddleData = new List<int>();
+            List<int> mathData = new List<int>();
+            List<int> alphabetData = new List<int>();
 
             username = Introduction();
 
@@ -37,16 +37,16 @@ namespace HowFastCanYouGo
             {
                 WouldLikeExample();
 
-                alphabetTimes = Alphabet();
+                alphabetData = Alphabet();
 
-                mathTimes = Math();
+                mathData = Math();
 
-                riddleTimes = Riddle();
+                riddleData = Riddle();
 
-                colorTimes = Color();
+                colorData = Color();
 
                 CongratsScreen(username);
-                DataScreen(alphabetTimes, mathTimes, riddleTimes, colorTimes);
+                DataScreen(alphabetData, mathData, riddleData, colorData);
 
                 ExitScreen();
 
